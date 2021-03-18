@@ -1,0 +1,65 @@
+<!DOCTYPE html;>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grafo</title>
+</head>
+<body>
+    <style>
+    
+    * {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+
+    .mynetwork {
+        width: 80%;
+        height: 100%;
+        border: 1px solid lightgray;   
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .graph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+    }
+
+    .graph h1{
+        display: block;
+        width: 20%;
+        text-align: center;
+    }
+    </style>
+
+    <div class="container">
+        <div class="graph">            
+            <h1>Grafo 1</h1>
+            <div class='mynetwork' id="mynetwork-1"></div>
+        </div>
+        <div class="graph">
+            <h1>Grafo 2</h1>
+            <div class='mynetwork' id="mynetwork-2"></div>
+        </div>
+        <div class="graph">
+            <h1>Grafo 3</h1>
+            <div class='mynetwork' id="mynetwork-3"></div>
+        </div>
+        <div class="graph">
+            <h1>Grafo 4</h1>
+            <div class='mynetwork' id="mynetwork-4"></div>
+        </div>
+    </div>
+
+    <script src='https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js'></script>
+    <script src='grafo.js'></script>
+
+</body>
+</html>
